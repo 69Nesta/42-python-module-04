@@ -1,6 +1,6 @@
 #! python3
 
-def ft_ancient_text():
+def ft_ancient_text() -> None:
     print('=== CYBER ARCHIVES - DATA RECOVERY SYSTEM ===\n')
     filename = 'ancient_fragment.txt'
     try:

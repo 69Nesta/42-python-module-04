@@ -1,6 +1,6 @@
 #! python3
 
-def ft_archive_creation():
+def ft_archive_creation() -> None:
     print('=== CYBER ARCHIVES - PRESERVATION SYSTEM ===\n')
 
     filename = 'new_discovery.txt'
