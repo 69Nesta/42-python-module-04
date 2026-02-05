@@ -10,8 +10,8 @@ def ft_ancient_text() -> None:
             print('\nRECOVERED DATA:')
             for line in file:
                 print(line, end='')
-            print('\n\nData recovery complete.', end='')
-        print(' Storage unit disconnected.')
+            print('\n\nData recovery complete.', end=' ')
+        print('Storage unit disconnected.')
 
     except FileNotFoundError:
         print('Error: Storage vault not found.')
