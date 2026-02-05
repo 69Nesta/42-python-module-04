@@ -5,9 +5,9 @@ def ft_archive_creation() -> None:
 
     filename = 'new_discovery.txt'
     entrys = [
-        'New quantum algorithm discovered',
-        'Efficiency increased by 347%',
-        'Archived by Data Archivist trainee'
+        'New quantum algorithm discovered\n',
+        'Efficiency increased by 347%\n',
+        'Archived by Data Archivist trainee\n'
     ]
 
     try:
@@ -18,9 +18,7 @@ def ft_archive_creation() -> None:
             for idx, entry in enumerate(entrys):
                 content = f'[ENTRY {idx}] {entry}'
                 file.write(content)
-                if (idx != len(entrys) - 1):
-                    file.write('\n')
-                print(content)
+                print(content, end='')
             print('')
         print('Data inscription complete. Storage unit sealed.')
         print(f'Archive \'{filename}\' ready for long-term preservation.')
