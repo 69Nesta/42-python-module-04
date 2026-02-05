@@ -3,9 +3,10 @@
 
 def ft_crisis_response() -> None:
     print('=== CYBER ARCHIVES - CRISIS RESPONSE SYSTEM ===\n')
+    filename = 'lost_archive.txt'
     try:
-        print('CRISIS ALERT: Attempting access to \'lost_archive.txt\'...')
-        with open('lost_archive.txt', 'r') as f:
+        print(f'CRISIS ALERT: Attempting access to \'{filename}\'...')
+        with open(filename, 'r') as f:
             print(f'SUCCESS: Archive recovered - \'\'{f.read()}\'\'')
     except FileNotFoundError:
         print('RESPONSE: Archive not found in storage matrix')
@@ -17,9 +18,10 @@ def ft_crisis_response() -> None:
         print('STATUS: Crisis handled, system stable')
     print('')
 
+    filename = 'classified_vault.txt'
     try:
-        print('CRISIS ALERT: Attempting access to \'classified_vault.txt\'...')
-        with open('classified_vault.txt', 'r') as f:
+        print(f'CRISIS ALERT: Attempting access to \'{filename}\'...')
+        with open(filename, 'r') as f:
             print(f'SUCCESS: Archive recovered - \'\'{f.read()}\'\'')
     except FileNotFoundError:
         print('RESPONSE: Archive not found in storage matrix')
@@ -30,11 +32,12 @@ def ft_crisis_response() -> None:
     finally:
         print('STATUS: Crisis handled, ecurity maintained')
 
+    filename = 'standard_archive.txt'
     print('')
     try:
-        print('ROUTINE ACCES: Attempting access to \'standard_archive.txt\''
+        print(f'ROUTINE ACCES: Attempting access to \'{filename}\''
               '...')
-        with open('standard_archive.txt', 'r') as f:
+        with open(filename, 'r') as f:
             print(f'SUCCESS: Archive recovered - \'\'{f.read()}\'\'')
     except FileNotFoundError:
         print('RESPONSE: Archive not found in storage matrix')

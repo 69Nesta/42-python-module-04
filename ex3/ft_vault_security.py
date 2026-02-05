@@ -2,9 +2,10 @@
 
 def ft_vault_security() -> None:
     print('=== CYBER ARCHIVES - VAULT SECURITY SYSTEM ===\n')
+    filename = 'classified_data.txt'
     try:
         print('Initiating secure vault access...')
-        with open('classified_data.txt', 'r+') as f:
+        with open(filename, 'r+') as f:
             print('Vault connection established with failsafe protocols')
             print('SECURE EXTRACTION:')
             print(f.read())
