@@ -12,7 +12,7 @@ def ft_archive_creation() -> None:
 
     try:
         print(f'Initializing new storage unit: {filename}')
-        with open(filename, 'w') as file:
+        with open(filename, 'a') as file:
             print('Storage unit created successfully...')
             print('\nInscribing preservation data...')
             for idx, entry in enumerate(entrys):

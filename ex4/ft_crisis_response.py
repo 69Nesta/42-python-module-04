@@ -8,6 +8,7 @@ def ft_crisis_response() -> None:
         print(f'CRISIS ALERT: Attempting access to \'{filename}\'...')
         with open(filename, 'r') as f:
             print(f'SUCCESS: Archive recovered - \'\'{f.read()}\'\'')
+        print('STATUS: Normal operations resumed')
     except FileNotFoundError:
         print('RESPONSE: Archive not found in storage matrix')
     except PermissionError:
@@ -23,6 +24,7 @@ def ft_crisis_response() -> None:
         print(f'CRISIS ALERT: Attempting access to \'{filename}\'...')
         with open(filename, 'r') as f:
             print(f'SUCCESS: Archive recovered - \'\'{f.read()}\'\'')
+        print('STATUS: Normal operations resumed')
     except FileNotFoundError:
         print('RESPONSE: Archive not found in storage matrix')
     except PermissionError:
@@ -39,6 +41,7 @@ def ft_crisis_response() -> None:
               '...')
         with open(filename, 'r') as f:
             print(f'SUCCESS: Archive recovered - \'\'{f.read()}\'\'')
+        print('STATUS: Normal operations resumed')
     except FileNotFoundError:
         print('RESPONSE: Archive not found in storage matrix')
     except PermissionError:
